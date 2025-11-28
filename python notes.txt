@@ -1,0 +1,120 @@
+1.variables:
+========================================
+used for storing values
+Rules:
+1.start with letters and underscore(a-z,_).
+2.It contains numbers numbers,alphabets[a-z,A-z]
+3.keywords can't be used as variables.
+4.case sensitive.
+valid:
+-----------
+_a=10;
+s=10;
+invalid:
+------------
+9a=9;
+1. Based on Scope
+--------------------
+These are the most common classification:
+A) Local Variable:
+Created inside a function
+Can only be used inside that function
+ex:
+def test():
+    x = 10   # local variable
+    print(x)
+B) Global Variable:
+Created outside all functions
+Can be used anywhere in the program
+ex:
+x = 50  # global variable
+def test():
+    print(x)
+----------------------------------
+2.data types:
+----------------------------------
+defines the type of the data stored in the variable.
+--------
+types:
+1.Numeric=int,float,complex(a+2j).
+2.sequence=list[],tuple(),range,
+3.Set=set{},frozenset
+4.None
+5.Dict=dict{}
+6.boolean= True or false
+7.bytes:byte,bytearray
+8.String
+---------------------------------
+TYPE  CASTING:
+---------------------------------
+changing the type of data stored in the variable.
+ex:a=111;
+print(str(a))#'111'
+ex:a=(a,b,c)
+print(list(a))
+print(set(a))
+print(frozenset(a))
+-----------------------------	
+OPERATORS:
+---------------------
+operator which operates the operand.
+here operands means value
+------
+Types of operators:
+1.Arithmetic opreator:+,-,*,/(normal divison gives in float),//(floor division= not shown in float.),%
+2.logical operator: and,or,not
+3.comparison operator:<,>,<=,>=,==.
+4.Special operator:1.membership operator=not in,in
+					2.Identity operator= is not,is. is used for compare of single element.
+5.Assignment operators:=,+=,-=,*=,/=,//=,%=,&=,|=,^=,<<=,>>=
+6.bitwise operator: &,|,^,>>,<<
+
+Ex:
+2<<2= 2*2*2
+2>>2=2/2=1=>1/2=0.5==0
+
+Loops:
+--------------------
+For loop:
+
+It is used to repeat a block of code multiple times
+It has two types.
+1.For loop:
+-> It is used to iterate over a sequence.
+-> Sequence might be List,Set,Dict,tuple,String
+
+While loop:
+----------------
+It  executes set of statements until condition is fasle.
+
+syntax: while condition true:
+                if(condition):
+                     break
+                # statements
+EX:print Even numbers
+i=0;
+while i<=10:
+        print(i)
+        i+=2
+Range:
+It retuns a sequence of numbers
+It is used for loop
+Syntax:
+  for <variable> in range(Start-,Stop,Step)
+
+  Ex: for i in range(10):
+                print(i)
+output: 0
+        1
+        2
+        3
+        4
+        5
+        6
+        7
+        8
+        9
+
+
+
+
