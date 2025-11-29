@@ -4,15 +4,16 @@ if (n<200):
     print("bye")
 
 #if else condition
-if (n<50):
-    print("Bye")
+sales=400
+if (sales<50):
+    print("stock ")
 else:
-    print("Hello")
+    print("out of stock")
 
-if (n>200):
-    print("Hi")
+if (sales>200):
+    print("inside stock")
 else:
-    print("malli")
+    print("out of stack sales")
 
 #elif condition:
 marks=300
